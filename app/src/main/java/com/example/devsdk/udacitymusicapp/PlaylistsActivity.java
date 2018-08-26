@@ -15,18 +15,18 @@ public class PlaylistsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_playlists);
 
         // Create a list of playlists with a FOR loop
-        ArrayList<String> words = new ArrayList<>();
+        ArrayList<String> playlistItems = new ArrayList<>();
 
         for(int i = 1; i < 26; ++i){
-            words.add("Playlist No." + i);
+            playlistItems.add("Playlist No." + i);
         }
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings.
 
         ArrayAdapter<String> itemsAdapter =
-                new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, words);
+                new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, playlistItems);
 
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView = (ListView) findViewById(R.id.playList);
 
         listView.setAdapter(itemsAdapter);
 

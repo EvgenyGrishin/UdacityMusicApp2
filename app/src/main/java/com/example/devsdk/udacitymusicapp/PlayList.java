@@ -1,12 +1,12 @@
 package com.example.devsdk.udacitymusicapp;
 
-public class Word {
+public class PlayList {
 
     private String mArtist;
 
     private String mAlbum;
 
-    public Word(String Artist, String Album) {
+    public PlayList(String Artist, String Album) {
         mArtist = Artist;
         mAlbum = Album;
     }
